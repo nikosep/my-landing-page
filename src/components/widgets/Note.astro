@@ -1,11 +1,34 @@
 ---
 import { Icon } from 'astro-icon/components';
+import './styles.css'; // Adjust the path based on your file structure
+
 ---
 
-<section class="bg-blue-50 dark:bg-slate-800 not-prose">
+<!-- <section class="bg-blue-50 dark:bg-slate-800 not-prose">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
     <span class="font-bold">
       <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" /> Philosophy:</span
     > Simplicity, Best Practices and High Performance
   </div>
+</section> -->
+<section class="bg-blue-50 dark:bg-blue-50 not-prose">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
+    <!-- <span class="font-bold">
+      <Icon name="tabler:signature" class="w-5 h-5 inline-block align-text-bottom" /> We have worked with <Icon name="tabler:certificate" class="w-5 h-5 inline-block align-text-bottom"/></span> -->
+    <span class="text-black"><Icon name="tabler:signature" class="w-5 h-5 inline-block align-text-bottom" /> We have worked with <Icon name="tabler:certificate" class="w-5 h-5 inline-block align-text-bottom"/></span>
+
+    <div class="flex items-center justify-center space-x-14 mt-4 rolling-icons">
+      <!-- Replace the URLs and alt text with your actual icons -->
+      <img src="https://cloudwick.com/hubfs/raw_assets/public/Cloudwick_December2020/images/Cloudwick-color-logo.svg" alt="Client 2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HSBC.svg/1280px-HSBC.svg.png" alt="Client 1" >
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Deloitte-logo-black.svg/2560px-Deloitte-logo-black.svg.png" alt="Client 6">
+      <img src="https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png" alt="Client 4">
+      <img src="https://www.andromeda-project.eu/images/community/logo/marine-traffic.png" alt="Client 3">
+      <!-- <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/National_Bank_of_Greece.svg/800px-National_Bank_of_Greece.svg.png" alt="Client 5">   -->
+      <!-- <img src="https://deeplab.ai/wp/wp-content/themes/custit-theme/img/logo.png" alt="Client 5">   -->
+      <!-- Add more icons as needed -->
+    </div>
+  </div>
 </section>
+
+

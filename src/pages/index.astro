@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'A tech consultancy seamlessly bridging the gap between technology and business',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,35 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Book a Call',
+        href: 'https://calendly.com/nikosepitropakis/let-s-get-to-know-each-other',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:brand-zoom',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#services' },
     ]}
-    image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
+    {/*image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}*/}
+    image={{ src: 'https://cdn.pixabay.com/photo/2022/09/29/23/44/augmented-reality-7488322_1280.jpg', alt: 'Ventureworks Landing Image' }}
+
+  
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      <span class="hidden xl:inline"></span>
+<span class="dark:text-white highlight">
+    <span class="text-accent" style="color: #900020;">venture</span>. beyond boundaries 🚀 empowered by tech
+</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">ventureworks</span> is an <span class="font-semibold">agile consultancy</span> and<span class="font-semibold"> tech hub</span></span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages
-      & Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600"></span>
+       seamlessly bridging the gap between <span style='text-shadow: 1px 1px 2px rgba(0,0,0,0.2);'>technology</span> and <span style='text-shadow: 1px 1px 2px rgba(0,0,0,0.2);'>business</span>, with a keen scope to deliver unparalleled value
+
+
+
+
     </Fragment>
   </Hero>
 
@@ -57,53 +64,53 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    id="services"
+    tagline="Our Services"
+    title="What you get with ventureworks"
+    subtitle="Experience professionalism, expertise, and refined tech services without the corporate fuss"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Data Analytics & AI',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Empower your business decisions with our cutting-edge Data Analytics & AI experience, unlocking unparalleled insights and strategic advantages.',
+        icon: 'tabler:chart-pie',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Project Management',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Elevate your project outcomes with our expert Project Management services, ensuring precision, efficiency, and successful delivery at every milestone.',
+        icon: 'tabler:presentation',
       },
       {
-        title: 'Best Practices',
+        title: 'SaaS Product Design',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Chart the transformation of your idea into a scalable product, leveraging our extensive multi-year productization experience and technical development expertise.',
+        icon: 'tabler:apps',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Startups & Innovation',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Elevate your startup journey with expert guidance on early-stage innovation, defining target audience, optimizing team roles and shaping revenue model.',
+        icon: 'tabler:telescope',
       },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
+      // {
+      //   title: 'Search Engine Optimization (SEO)',
+      //   description:
+      //     "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+      //   icon: 'tabler:arrows-right-left',
+      // },
+      // {
+      //   title: 'Open to new ideas and contributions',
+      //   description:
+      //     'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+      //   icon: 'tabler:bulb',
+      // },
     ]}
   />
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     tagline="Inside template"
     title="AstroWind's Blueprint: Fun Meets Functionality!"
@@ -137,11 +144,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isAfterContent
     items={[
       {
@@ -174,11 +181,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -212,11 +219,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
+  <!-- <Steps
     title="Get your dream website up and running in no time with AstroWind."
     items={[
       {
@@ -250,7 +257,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -310,77 +317,73 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
+    title="Find out more in our recent Project section"
+    information={`Explore showcased impactful projects that demonstrate our successful delivery of relevant solutions, showcasing our commitment to excellence and client satisfaction.`}/>
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Explore these questions to learn more about collaborating with ventureworks"
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What is the typical duration of a tech project engagement with your firm?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "It depends on the project scope. Typically, projects can range from a few weeks for smaller initiatives to several months for more extensive developments.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'How do you estimate the effort required for a project?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'We begin with an introductory call to define the project scope, and based on that, we provide a proposal outlining the estimated effort and project plan.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Can you accommodate varying project sizes, from short-term to long-term initiatives?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Yes, we cater to both short and long-term projects, ensuring flexibility to meet the unique requirements and timelines of our clients.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "What steps are involved in the project initiation process, and how quickly can we get started?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "The process involves an initial call, gathering requirements, effort estimation, team mobilization, and project kickoff, allowing us to efficiently initiate projects in a streamlined manner.",
       },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
+      // {
+      //   title: 'What is something that you would like to try again?',
+      //   description:
+      //     "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+      // },
+      // {
+      //   title: 'If you could only ask one question to each person you meet, what would that question be?',
+      //   description:
+      //     "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+      // },
     ]}
   />
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!-- <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  /> -->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!-- <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Book a Call',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
@@ -395,5 +398,5 @@ const metadata = {
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction> -->
 </Layout>
