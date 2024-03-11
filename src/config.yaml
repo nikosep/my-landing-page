@@ -1,6 +1,6 @@
 site:
   name: ventureworks
-  site: 'https://ventureworks'
+  site: 'https://ventureworks.cc'
   base: '/'
   trailingSlash: false
 
