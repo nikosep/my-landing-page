@@ -9,7 +9,7 @@ tags:
   - deep-learning
   - analytics
 metadata:
-  canonical: http://localhost:4321/recommendation-systems-for-adtech
+  canonical: https://ventureworks.cc/recommendation-systems-for-adtech
 ---
 
 In the competitive landscape of adtech, precision in auctioning is paramount for securing optimal deals for publishers. The pursuit of sophisticated solutions is key to maximizing outcomes.

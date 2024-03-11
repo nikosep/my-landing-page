@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ventureworks/sitemap-index.xml
+Sitemap: https://ventureworks.cc/sitemap-index.xml
