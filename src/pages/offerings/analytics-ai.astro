@@ -1,0 +1,339 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Analytics & AI Solid Experience',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Analytics & AI"
+    actions={[
+      // { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Use cases', href: '#use-cases' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'ventureworks analytics',
+    }}
+  >
+    <Fragment slot="title">
+      Insightful Solutions: Elevating Business  <br /> through <span class="text-accent dark:text-white highlight"
+        >Analytics and Machine Learning</span
+      > Expertise<br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <!-- <span class="hidden sm:inline">
+        Elevate your website creation process with <span class="font-semibold">AstroWind</span>'s SaaS solutions.</span
+      > -->
+       Delivering Data Insights: Predictive Modeling, Dashboards, and Modern AI Solutions for Retail, E-commerce, and Banking
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <!-- <Features
+    id="features"
+    title="Why choose AstroWind?"
+    subtitle="Each of the following features enhances AstroWind's value proposition."
+    columns={2}
+    items={[
+      {
+        title: 'Integration of Astro 4.0 and Tailwind CSS',
+        description:
+          'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
+        icon: 'tabler:layers-union',
+      },
+      {
+        title: 'Versatile design for startups, small businesses, and more',
+        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
+        icon: 'tabler:artboard',
+      },
+      {
+        title: 'Effortless customization for portfolios and marketing sites',
+        description:
+          'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
+        icon: 'tabler:writing',
+      },
+      {
+        title: 'Optimized landing pages and engaging blogs',
+        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
+        icon: 'tabler:podium',
+      },
+      {
+        title: 'Fast loading times and production-ready code',
+        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'SEO-optimized structure for enhanced visibility',
+        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
+        icon: 'tabler:eyeglass',
+      },
+    ]}
+  /> -->
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="use-cases"
+    title="Use cases"
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'At ventureworks, we embarked on a customer analytics project with a leading retail chain seeking to enhance their understanding of consumer behavior across various touchpoints. Leveraging advanced data mining techniques and machine learning algorithms, we analyzed customer transactions, browsing patterns, and demographic information to uncover actionable insights.',
+      },
+      {
+        title: 'Benefits:',
+        description: `Through our customer analytics initiative, the retail chain experienced significant improvements in several key areas. Firstly, our detailed analysis enabled them to segment their customer base effectively, identifying high-value customers for targeted marketing campaigns and personalized offerings. Secondly, by understanding customer preferences and purchase patterns, the retailer optimized product assortments and inventory management, resulting in reduced stockouts and improved sales performance. Additionally, our insights empowered the client to enhance their omnichannel experience, aligning marketing strategies with customer expectations across online and offline channels. Ultimately, our customer analytics solution drove increased customer satisfaction, loyalty, and overall profitability for the retail chain.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'ventureworks: Driving Value in Analytics Use Cases – Unveiling Success Stories',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        <!-- Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span> -->
+        <span class="text-2xl">Customer Analytics & Insights</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `In a recent engagement with a global financial institution, ventureworks undertook a comprehensive data insights and visualization project to streamline decision-making processes. Utilizing cutting-edge analytics tools and visualization techniques, we aggregated and analyzed vast volumes of financial data spanning multiple sources and formats.`,
+      },
+      {
+        title: 'Benefits:',
+        description: `Through our data insights and visualization solution, the financial institution experienced transformative benefits across various facets of their operations. Firstly, our visualization dashboards provided intuitive and real-time access to critical financial metrics, enabling stakeholders to make informed decisions swiftly. Secondly, our in-depth analysis uncovered hidden trends and anomalies within the data, allowing the institution to proactively mitigate risks and capitalize on emerging opportunities. Moreover, the interactive nature of our visualizations facilitated cross-departmental collaboration and knowledge sharing, fostering a culture of data-driven decision-making across the organization. Ultimately, our data insights and visualization solution empowered the institution to optimize performance, enhance operational efficiency, and drive sustainable growth in a rapidly evolving market landscape.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'Data Insights and Visualization',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        <!-- SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span> -->
+        <span class="text-2xl">Data Insights and Visualization</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description: `In collaboration with a multinational corporation, ventureworks embarked on an HR analytics initiative aimed at optimizing workforce management strategies and enhancing employee satisfaction. Leveraging advanced analytics tools and methodologies, we delved into diverse HR datasets encompassing employee demographics, performance metrics, and engagement surveys.`,
+      },
+      {
+        title: 'Benefits:',
+        description: `Our HR analytics solution yielded significant benefits for the multinational corporation across various dimensions of human resource management. Firstly, our analysis provided deep insights into employee performance and productivity, enabling HR managers to identify top talent, address skill gaps, and optimize team structures for maximum efficiency. Secondly, by leveraging predictive analytics, we forecasted future workforce needs and attrition risks, empowering the corporation to implement proactive retention strategies and succession planning initiatives. Additionally, our analysis of engagement surveys and sentiment analysis provided actionable insights into employee sentiments and satisfaction levels, facilitating targeted interventions to enhance workplace culture and employee well-being. Ultimately, our HR analytics solution enabled the multinational corporation to foster a more engaged, motivated, and high-performing workforce, driving organizational success and competitive advantage in the marketplace.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Portfolio Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        <br /><span class="text-2xl">HR Analytics</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    items={[
+      {
+        title: 'Description:',
+        description: `Partnering with a leading marketing agency, ventureworks spearheaded a transformative MROI (Marketing Return on Investment) initiative aimed at maximizing the effectiveness and efficiency of marketing campaigns. Leveraging sophisticated data analytics tools and methodologies, we analyzed comprehensive marketing datasets encompassing campaign performance metrics, customer segmentation, and attribution modeling.`,
+      },
+      {
+        title: 'Benefits:',
+        description: `Our MROI analysis delivered substantial value for the marketing agency and its clients by unlocking actionable insights and optimizing marketing spend. Firstly, our analysis provided granular visibility into the performance of individual marketing campaigns, allowing the agency to allocate resources strategically and prioritize initiatives with the highest potential for return on investment. Secondly, leveraging attribution modeling techniques, we accurately attributed revenue and conversions to specific marketing touchpoints, enabling the agency to optimize its multi-channel marketing mix and maximize campaign effectiveness. Additionally, our customer segmentation analysis identified high-value customer segments, facilitating targeted marketing strategies tailored to specific audience preferences and behaviors. Ultimately, our MROI analysis empowered the marketing agency to enhance campaign performance, drive revenue growth, and deliver measurable results for its clients, thus solidifying its position as a trusted partner in driving marketing success.`,
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      alt: 'MROI (Marketing Return on Investment)',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        <br /><span class="text-2xl">MROI (Marketing Return on Investment)</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Pricing Widget ******************* -->
+
+  <!-- <Pricing
+    title="Flexible pricing plans"
+    prices={[
+      {
+        title: 'free',
+        subtitle: 'Access to core features and a wide range of templates',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Get Started for Free',
+          href: '#',
+        },
+      },
+      {
+        title: 'pro',
+        subtitle: 'Premium templates and advanced customization',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Upgrade to Pro',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Tailored solutions for large-scale projects',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Unlock Enterprise Features',
+          href: '#',
+        },
+      },
+    ]}
+  /> -->
+
+  <!-- FAQs Widget ******************* -->
+
+  <!-- <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'Is AstroWind compatible with the latest versions of Astro and Tailwind CSS?',
+        description:
+          'Yes, AstroWind is designed to be compatible with the latest versions of both Astro and Tailwind CSS. This ensures that you can harness the full capabilities of these technologies while benefiting from the features offered by AstroWind.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Can I use AstroWind for both personal and commercial projects?',
+        description: `Certainly! AstroWind is versatile and can be used for a wide range of projects, including both personal and commercial endeavors. Whether you're building a professional portfolio, launching a startup, or creating a marketing website, AstroWind has you covered.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'What level of coding knowledge is required to use AstroWind?',
+        description:
+          'While some familiarity with HTML, CSS, and web development concepts is helpful, the user-friendly interface and customization options allow those with limited coding experience to create impressive websites. For more advanced users, AstroWind offers extensive customization capabilities.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Is customer support available for AstroWind users seeking guidance?',
+        description: `Absolutely, our dedicated customer support team is here to assist you with any questions or challenges you may encounter. Feel free to reach out to us through our support channels, and we'll be happy to provide the help you need.`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs> -->
+
+  <!-- Steps2 Widget ****************** -->
+
+  <!-- <Steps2
+    title="Reach out to us"
+    subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
+    callToAction={{
+      text: 'Contact us',
+      href: '/',
+    }}
+    items={[
+      {
+        title: 'Email us',
+        description: 'contact@support.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Call us',
+        description: '+1 (234) 567-890',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Follow us',
+        description: '@example',
+        icon: 'tabler:brand-twitter',
+      },
+    ]}
+  /> -->
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <!-- <BlogLatestPosts
+    id="blog"
+    title="Stay informed with AstroWind's blog"
+    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts> -->
+</Layout>

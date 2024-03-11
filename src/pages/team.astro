@@ -1,0 +1,112 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'The Team of ventureworks - Experience and Background',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:table-row',
+        callToAction: {
+          target: '_blank',
+          text: 'Project Management',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:businessplan',
+        callToAction: {
+          target: '_blank',
+          text: 'Business Development',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:device-analytics',
+        callToAction: {
+          target: '_blank',
+          text: 'Analytics & AI',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:brand-python',
+        callToAction: {
+          target: '_blank',
+          text: 'Python',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:database',
+        callToAction: {
+          target: '_blank',
+          text: 'Databases',
+          href: '#',
+        },
+      },
+      {
+        icon: 'tabler:cloud',
+        callToAction: {
+          target: '_blank',
+          text: 'Cloud & Infra',
+          href: '#',
+        },
+      },
+    ]}
+    image={{
+      src: 'https://media.licdn.com/dms/image/C4D03AQEkwPFMRhcpxA/profile-displayphoto-shrink_400_400/0/1662888371650?e=1711584000&v=beta&t=lwmzg4OmkkfEIUpbPg702VxG44VfVflQa1XV78gZ9h4',
+      alt: 'Colorful Image',
+      style: { width: '200px', height: '200px' }
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nikos Epitropakis</h3>
+<h4 class="text-gray-500 text-sm font-bold tracking-tight dark:text-white sm:text-2xl mb-2">Managing Director</h4>
+
+      <p>
+        With 10+ years of experience as an Analytics & Strategy Manager across consulting firms and various industries including banking, maritime, adtech, and retail, I am a Computer Engineer with an MSc in Artificial Intelligence. Proficient in Python programming, PowerBI visualization, and agile project management, I also possess extensive expertise as a founder of SaaS products with a focus on product design and launch.
+      </p>
+      <br />
+      <br />
+      <p>Skills:</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+  <!-- Steps Widget ****************** -->
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Find out more in our recent Project section"
+    information={`Explore showcased impactful projects that demonstrate our successful delivery of relevant solutions, showcasing our commitment to excellence and client satisfaction.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>
