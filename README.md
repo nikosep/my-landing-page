@@ -1,3 +1,10 @@
+# HOW TO DEPLOY (NIKOS EDIT)
+
+- npm run build
+- git add .
+- git commit -m ""
+- git push
+
 # 🚀 AstroWind
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
